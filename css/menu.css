@@ -1,0 +1,45 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header .header__warp {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  background: url("../assets/logo.apt2@2x.png") 0 0 no-repeat padding-box;
+  background-size: cover;
+  height: 55px;
+  width: 267px;
+}
+.header .header__logo {
+  flex: 0 0 267px;
+  height: 55px;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu-item {
+  font: normal normal normal 16px/19px "Montserrat";
+  color: #707070;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.menu-item_active {
+  color: #dd2958;
+}
+
+.menu-item:hover {
+  color: #dd2958;
+}
+
+.header_menu-item_active {
+  color: #dd2958;
+}

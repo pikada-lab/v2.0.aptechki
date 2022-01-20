@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.warp {
+  width: 1345px;
+  margin: 0 auto;
+}
+.between {
+  flex: 1;
+}
+h1 {
+}
+h2 {
+}
+
+h3 {
+}
+
+p {
+  color: #121212;
+}
+
+.list-button {
+  display: flex;
+  gap: 30px;
+}
+.button {
+  border-radius: 17px;
+  padding: 16px;
+  width: 230px;
+  font: normal normal bold 16px/30px "Montserrat";
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  border: 2px solid #fff;
+}
+/* Fill button */
+.button.button_fill {
+  background: transparent linear-gradient(98deg, #00b3d8 0%, #126bee 52%, #1b7bdb 100%) 0% 0% no-repeat padding-box;
+  border: 2px solid #fff;
+  box-shadow: 0px 3px 6px #00000029;
+  color: #fff;
+}
+.button.button_fill:focus {
+  outline: none;
+  border-color: #f90;
+}
+.button.button_fill:hover {
+  box-shadow: 0px 4px 5px #00000054;
+}
+.button.button_fill:active {
+  transition: 0.05s;
+  box-shadow: 0px 1px 2px #00000054;
+}
+/* strok button */
+
+.button.button_strok {
+  border-color: #004181;
+  color: #104a84;
+}
+.button.button_strok:focus {
+  outline: none;
+  border-color: #754600;
+  color: #754600;
+}
+.button.button_strok:hover {
+  background: #104a8427;
+}
+.button.button_strok:active {
+  transition: 0.05s;
+  background: #104a8423;
+  border-color: #005dbb;
+  color: #005dbb;
+}
+
+.input {
+}
+.back {
+  background: #f3f3f3;
+}
+
+.circle {
+  width: 576px;
+  height: 559px;
+  position: relative;
+}
