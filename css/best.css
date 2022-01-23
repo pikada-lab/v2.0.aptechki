@@ -7,3 +7,37 @@
   gap: 50px;
   height: 100%;
 }
+
+.best__image {
+  margin-top: 150px;
+  flex: 1; 
+  text-align: right;
+} 
+
+.best__image img {
+  width: 500px;
+}
+
+.best__text {
+  margin-top: 150px;
+  flex: 1;
+}
+
+.best p {
+  font: normal normal normal 16px/30px "Montserrat";
+  color: #121212;
+}
+.best p.best__p {
+  font: normal normal normal 16px/18px "Montserrat";
+  color: #349AFF;
+}
+ 
+.best h3 {
+  color: #DD2958;
+  max-width: 500px;
+  font: normal normal bold 32px/47px "Montserrat";
+}
+
+.best_botton {
+  margin-top: 80px;
+}

@@ -1,0 +1,25 @@
+
+.search-form {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: inset 0px 3px 6px #00000045;
+  border-radius: 8px;
+  display: flex;
+  padding: 6px;
+  width: 801px;
+  gap: 6px;
+}
+
+.search-form__input {
+  font: normal normal normal 20px/18px Montserrat;
+  flex: 1;
+  padding: 0 20px;
+  border: none;
+}
+
+.search-form__button {
+  width: 172px;
+  height: 41px;
+  border-radius: 6px;
+  padding: 0;
+  font: normal normal bold 14px/30px "Montserrat";
+}
