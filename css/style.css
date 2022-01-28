@@ -8,18 +8,24 @@ body {
   width: 1345px;
   margin: 0 auto;
 }
+
 .between {
   flex: 1;
 }
+
 h1 {
 }
+
 h2 {
+  font: normal normal bold 32px/47px "Montserrat";
+  color: #dd2958;
 }
 
 h3 {
 }
 
 p {
+  font-family: "Montserrat";
   color: #121212;
 }
 
@@ -34,13 +40,14 @@ p {
   font: normal normal bold 16px/30px "Montserrat";
   text-align: center;
   cursor: pointer;
-  transition: 0.4s ease-in-out;
+  transition:   0.4s ease-in-out;
+  transition-property: color, background-color, box-shadow;
   border: 2px solid #fff;
 }
 /* Fill button */
 .button.button_fill {
   background: transparent linear-gradient(98deg, #00b3d8 0%, #126bee 52%, #1b7bdb 100%) 0% 0% no-repeat padding-box;
-  border: 2px solid #fff;
+ 
   box-shadow: 0px 3px 6px #00000029;
   color: #fff;
 }
@@ -79,12 +86,7 @@ p {
 .back {
   background: #f3f3f3;
 }
-
-.circle {
-  width: 576px;
-  height: 559px;
-  position: relative;
-}
+ 
 
 input {
   box-sizing: border-box;
@@ -92,5 +94,35 @@ input {
 input:focus {
   outline: none;
 }
+
+.warp {
+  width: 1345px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1380px) {
+  .warp {
+    width: 1032px;
+  }
+  .button {
+    border-radius: 14px;
+    padding: 10px 12px;
+    width: 180px;
+    font: normal normal bold 15px/30px "Montserrat";
+    border: 1px solid #fff;
+  }
  
- 
+}
+
+@media (max-width: 1064px) {
+  .warp {
+    width: 100%;
+  }
+  .button {
+    border-radius: 12px;
+    padding: 8px 8px;
+    width: 120px;
+    font: normal normal bold 12px/22px "Montserrat";
+    border: 1px solid #fff;
+  }
+}

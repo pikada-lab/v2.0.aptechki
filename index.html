@@ -5,20 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Аптечки ру</title>
     <meta name="description" content="Укомплектуем вашу аптечку" />
+    <meta name="theme-color" content="#9b183b" />
+    <meta name="msapplication-TileColor" content="#9b183b" />
+    <meta name="msapplication-navbutton-color" content="#9b183b" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#9b183b" />
+
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/menu.css" />
-    <link rel="stylesheet" href="./css/greeter.css" />
+    <link rel="stylesheet" href="./css/menu.css?5" />
+    <link rel="stylesheet" href="./css/greeter.css?4" />
     <link rel="stylesheet" href="./css/best.css" />
     <link rel="stylesheet" href="./css/popular.css" />
     <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/product-card.css">
-    <link rel="stylesheet" href="./css/search-form.css">
-    <link rel="stylesheet" href="./css/chips.css">
+    <link rel="stylesheet" href="./css/product-card.css" />
+    <link rel="stylesheet" href="./css/search-form.css" />
+    <link rel="stylesheet" href="./css/chips.css" />
+    <link rel="stylesheet" href="./css/clients-insert.css" />
+    <link rel="stylesheet" href="./css/client-card.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+    <link rel="stylesheet" href="./css/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
+
+    <script type="text/javascript" src="http://code.createjs.com/easeljs-0.6.0.min.js"></script>
+ 
   </head>
   <body>
+    <!-- start header -->
     <header class="header">
       <div class="warp header__warp">
+        <a class="header__back header__mobile_button" href="#back">
+          <i class="fas fa-chevron-left"></i>
+        </a>
+
         <div class="logo header__logo"></div>
         <div class="between"></div>
         <nav class="menu header__menu">
@@ -27,13 +50,43 @@
           <a class="menu-item" href="./clients.html">Наши клиенты</a>
           <a class="menu-item" href="./contacts.html">Контакты</a>
         </nav>
+
+        <a class="header__call header__mobile_button" href="#call">
+          <i class="fas fa-phone"></i>
+        </a>
+      </div>
+      <div class="header__mobile-menu">
+        <div class="warp heade__mobule-warp">
+          <div class="header__mobile-item">
+            <div class="header__mobile-icon">
+              <i class="fas fa-medkit"></i>
+            </div>
+            <div class="header__mobile-title">Аптечки</div>
+          </div>
+
+          <div class="header__mobile-item">
+            <div class="header__mobile-icon">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <div class="header__mobile-title">Клиенты</div>
+          </div>
+
+          <div class="header__mobile-item header__mobile-item__active">
+            <div class="header__mobile-icon">
+              <i class="fas fa-map-marked-alt"></i>
+            </div>
+            <div class="header__mobile-title">Контакты</div>
+          </div>
+        </div>
       </div>
     </header>
+    <!-- end header -->
+    <!-- start greeter -->
     <section class="greeter">
       <div class="back greeter__back">
         <div class="warp greeter__warp">
           <div class="greeter__text-block">
-            <p class="greeter__p">Укомплектуем аптечку по вашему заказу</p>
+            <p class="greeter__p greeter__subtitle">Укомплектуем аптечку по вашему заказу</p>
             <div class="logo-text greeter__logo-text"></div>
             <p class="greeter__p">
               Мы поставляем аптечки уже более 10 лет по России с доставкой в офис, склад, производство соответствующие
@@ -46,13 +99,52 @@
           </div>
           <div class="greeter__image-block">
             <div class="circle greeter__circle">
-              <img src="./assets/1.png" srcset="assets/1.png 1x, assets/1@2x.png 2x, assets/1@2x.png 3x" />
+              <canvas id='canvas' width="1000" height="465"></canvas>
+              <svg class="circle__back" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="755" height="647" viewBox="0 0 755 647">
+                <defs>
+                  <linearGradient id="linear-gradient" x1="1" x2="0" gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#f3f3f3" stop-opacity="0"/>
+                    <stop offset="0.071" stop-color="#f3f3f3" stop-opacity="0.816"/>
+                    <stop offset="0.226" stop-color="#f3f3f3"/>
+                    <stop offset="0.803" stop-color="#f3f3f3"/>
+                    <stop offset="0.95" stop-color="#f3f3f3" stop-opacity="0.769"/>
+                    <stop offset="1" stop-color="#f3f3f3" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <g id="Сгруппировать_22" data-name="Сгруппировать 22" transform="translate(-887 -127)">
+                  <g id="Сгруппировать_2" data-name="Сгруппировать 2" transform="translate(608.249 -195.531)">
+                    <g id="Эллипс_1" data-name="Эллипс 1" transform="translate(278.751 586.532)" fill="none" stroke="#dfdfdf" stroke-width="2" stroke-dasharray="5 5">
+                      <ellipse cx="377.5" cy="191.5" rx="377.5" ry="191.5" stroke="none"/>
+                      <ellipse cx="377.5" cy="191.5" rx="376.5" ry="190.5" fill="none"/>
+                    </g>
+                    <rect id="Прямоугольник_2" data-name="Прямоугольник 2" width="755" height="444" transform="translate(278.751 322.532)" fill="url(#linear-gradient)"/>
+                  </g>
+                  <g id="Сгруппировать_1" data-name="Сгруппировать 1" transform="translate(652.637 -157.532)">
+                    <g id="Эллипс_1-2" data-name="Эллипс 1" transform="translate(278.363 555.532)" fill="none" stroke="#921213" stroke-width="2">
+                      <ellipse cx="333.5" cy="169" rx="333.5" ry="169" stroke="none"/>
+                      <ellipse cx="333.5" cy="169" rx="332.5" ry="168" fill="none"/>
+                    </g>
+                    <rect id="Прямоугольник_2-2" data-name="Прямоугольник 2" width="667" height="392" transform="translate(278.363 322.532)" fill="url(#linear-gradient)"/>
+                  </g>
+                  <g id="Сгруппировать_23" data-name="Сгруппировать 23" transform="translate(706.674 -101.185)">
+                    <g id="Эллипс_1-3" data-name="Эллипс 1" transform="translate(278.326 518.185)" fill="none" stroke="#dfdfdf" stroke-width="2" stroke-dasharray="5 5">
+                      <ellipse cx="279.5" cy="141.5" rx="279.5" ry="141.5" stroke="none"/>
+                      <ellipse cx="279.5" cy="141.5" rx="278.5" ry="140.5" fill="none"/>
+                    </g>
+                    <rect id="Прямоугольник_2-3" data-name="Прямоугольник 2" width="559" height="329" transform="translate(278.326 322.185)" fill="url(#linear-gradient)"/>
+                  </g>
+                  <circle id="Эллипс_2" data-name="Эллипс 2" cx="19" cy="19" r="19" transform="translate(1252 716)" fill="maroon"/>
+                  <text id="_360_" data-name="360°" transform="translate(1258 740)" fill="#fff" font-size="12" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">360°</tspan></text>
+                </g>
+              </svg>
             </div>
           </div>
         </div>
       </div>
+      <script src="./js/360.js"></script>
     </section>
-
+    <!-- end greeter -->
+    <!-- start best -->
     <section class="best">
       <div class="warp best__warp">
         <div class="best__image">
@@ -66,16 +158,19 @@
         </div>
       </div>
     </section>
-
+    <!-- end best -->
     <section class="popular">
       <h2 class="popular__title">Популярные аптечки</h2>
       <p class="popular__descriptor">
-        Если здесь нет аптечки, которая вам нужна, свяжитесь с нами по телефону 8(800)200-96-97
+        Если здесь нет аптечки, которая вам нужна,<br />
+        свяжитесь с нами по телефону 8(800)200-96-97
       </p>
+      <!-- start search-form  -->
       <div class="search-form popular__search-form">
         <input class="search-form__input" placeholder="Название, приказ, назначение" />
         <button class="button button_fill search-form__button">Поиск</button>
       </div>
+      <!-- end search-form -->
       <div class="warp popular__warp">
         <!-- START product-card -->
         <a class="product-card" href="product.html">
@@ -126,11 +221,12 @@
             <img src="./assets/1.png" srcset="assets/1.png 1x, assets/1@2x.png 2x, assets/1@2x.png 3x" />
           </div>
           <div class="product-card__stereo-box">
-            <div class="chips"> 
-            </div>
+            <div class="chips"></div>
             <h2 class="product-card__title">АНТИВИЧ / АНТИГЕПАТИТ</h2>
             <p class="product-card-description">
-              Согласно Приказам Министерства Здравоохранения и Управления Роспотребнадзора РФ о мерах по профилактике профессионального инфицирования ВИЧ парентеральными вирусными гепатитами, лечебно – профилактические организации, а также салоны красоты
+              Согласно Приказам Министерства Здравоохранения и Управления Роспотребнадзора РФ о мерах по профилактике
+              профессионального инфицирования ВИЧ парентеральными вирусными гепатитами, лечебно – профилактические
+              организации, а также салоны красоты
             </p>
             <div class="product-card__price-line">
               <div class="product-card__price">1 207 900 ₽</div>
@@ -145,12 +241,9 @@
             <img src="./assets/1.png" srcset="assets/1.png 1x, assets/1@2x.png 2x, assets/1@2x.png 3x" />
           </div>
           <div class="product-card__stereo-box">
-            <div class="chips"> 
-            </div>
+            <div class="chips"></div>
             <h2 class="product-card__title">Аптечка железнодорожника - машиниста</h2>
-            <p class="product-card-description">
-              - аптечка в грузовой, пассажирский поезд Аптечка железнодорожника
-            </p>
+            <p class="product-card-description">- аптечка в грузовой, пассажирский поезд Аптечка железнодорожника</p>
             <div class="product-card__price-line">
               <div class="product-card__price">1 207 900 ₽</div>
               <div class="product-card__logo"></div>
@@ -221,13 +314,174 @@
           </div>
         </div>
         <!-- END product-card -->
+      </div>
+      <div class="popular__more">
+        <button class="button button_fill popular__more_button">Смотреть полный перечень товаров</button>
       </div>
     </section>
+    <!-- start clients-insert  -->
+    <section class="clients-insert">
+      <h2 class="clients-insert__title">Популярные аптечки</h2>
+      <div class="warp clients-insert__warp">
+        <div class="slider">
+          <div class="slider-list">
+            <div class="clients-insert__slider slider-track">
+              <div class="slide">
+                <!-- client-card -->
+                <div class="client-card">
+                  <div class="client-card__decor"></div>
+                  <div class="client-card__image">
+                    <img
+                      src="./assets/zaryadye-main-logo-rus.png"
+                      alt="Парк Зарядье"
+                      srcset="./assets/zaryadye-main-logo-rus.png 1x, ./assets/zaryadye-main-logo-rus@2x.png 2x"
+                    />
+                  </div>
+                  <div class="client-card__text">
+                    <h3 class="client-card__title">Парк Зарядье</h3>
+                    <div class="client-card__description">
+                      Природно-ландшафтный парк «Зарядье» — объект в одноимённом историческом районе Москвы, созданный
+                      на месте снесённой в 2006 году гостиницы «Россия». Расположен на территории площадью в 13га между
+                      Китайгородским проездом, улицей Варваркой и Москворецкой набережной.
+                    </div>
+                  </div>
+                </div>
+                <!-- End client-card -->
+              </div>
+              <div class="slide">
+                <!-- client-card -->
+                <div class="client-card">
+                  <div class="client-card__decor"></div>
+                  <div class="client-card__image">
+                    <img
+                      src="./assets/MedicCEntr.png"
+                      alt="Медицинский центр Елены Малышевой"
+                      srcset="./assets/MedicCEntr.png 1x, ./assets/MedicCEntr@2x.png 2x"
+                    />
+                  </div>
+                  <div class="client-card__text">
+                    <h3 class="client-card__title">Медицинский центр Елены Малышевой</h3>
+                    <div class="client-card__description">
+                      Медицинский центр Елены Малышевой - это амбулаторная клиника. Мы собрали в ней лучших докторов
+                      России и мира. Я очень хочу, чтобы все достижения мировой медицины служили жителям нашей страны.
+                      Не волнуйтесь, пожалуйста, все зарубежные доктора блестяще говорят по-русски и никаких проблем в
+                      общении не будет.
+                    </div>
+                  </div>
+                </div>
+                <!-- End client-card -->
+              </div>
+              <div class="slide">
+                <!-- client-card -->
+                <div class="client-card">
+                  <div class="client-card__decor"></div>
+                  <div class="client-card__image">
+                    <img
+                      src="./assets/zaryadye-main-logo-rus.png"
+                      alt="Парк Зарядье"
+                      srcset="./assets/zaryadye-main-logo-rus.png 1x, ./assets/zaryadye-main-logo-rus@2x.png 2x"
+                    />
+                  </div>
+                  <div class="client-card__text">
+                    <h3 class="client-card__title">Парк Зарядье</h3>
+                    <div class="client-card__description">
+                      Природно-ландшафтный парк «Зарядье» — объект в одноимённом историческом районе Москвы, созданный
+                      на месте снесённой в 2006 году гостиницы «Россия». Расположен на территории площадью в 13га между
+                      Китайгородским проездом, улицей Варваркой и Москворецкой набережной.
+                    </div>
+                  </div>
+                </div>
+                <!-- End client-card -->
+              </div>
+              <div class="slide">
+                <!-- client-card -->
+                <div class="client-card">
+                  <div class="client-card__decor"></div>
+                  <div class="client-card__image">
+                    <img
+                      src="./assets/MedicCEntr.png"
+                      alt="Медицинский центр Елены Малышевой"
+                      srcset="./assets/MedicCEntr.png 1x, ./assets/MedicCEntr@2x.png 2x"
+                    />
+                  </div>
+                  <div class="client-card__text">
+                    <h3 class="client-card__title">Медицинский центр Елены Малышевой</h3>
+                    <div class="client-card__description">
+                      Медицинский центр Елены Малышевой - это амбулаторная клиника. Мы собрали в ней лучших докторов
+                      России и мира. Я очень хочу, чтобы все достижения мировой медицины служили жителям нашей страны.
+                      Не волнуйтесь, пожалуйста, все зарубежные доктора блестяще говорят по-русски и никаких проблем в
+                      общении не будет.
+                    </div>
+                  </div>
+                </div>
+                <!-- End client-card -->
+              </div>
+            </div>
+          </div>
 
+          <div class="slider-arrows">
+            <button type="button" class="prev"><div class="fa fa-chevron-left"></div></button>
+            <button type="button" class="next"><div class="fa fa-chevron-right"></div></button>
+          </div>
+        </div>
+      </div>
+      <script src="./js/carousal.js"></script>
+    </section>
+    <!-- end clients-insert -->
     <footer class="footer">
-      <div class="warp footer__warp">
-        <div class="logo footer__logo"></div>
+      <div class="footer__nav">
+        <div class="warp footer__warp">
+          <div class="footer__col-2">
+            <h4 class="footer__nav-title">Наши контакты</h4>
+            <p>Тел.: 8 800 200 96 97</p>
+            <p>Почта: aptechki@bk.ru</p>
+            <p>
+              Адрес: М. Люблино,<br />
+              ул. Верхние поля 45 к.4 Москва
+            </p>
+          </div>
+          <div class="footer__col-2">
+            <h4 class="footer__nav-title">Карта сайта</h4>
+            <p><a href="./">Главная</a></p>
+            <p><a href="./">Аптечки</a></p>
+            <p><a href="./">Наши клиенты</a></p>
+            <p><a href="./">Контакты</a></p>
+          </div>
+          <div class="footer__col-4">
+            <h4 class="footer__nav-title">Способы оплаты</h4>
+            <p>
+              Безналичный расчёт:<br />
+              ОГРН 1047796721642 ИНН/КПП 7723521600 / 772301001
+            </p>
+            <p>
+              Наличный расчёт:<br />
+              г. Москва, М. Люблино, ул. Верхние поля 45 к.4
+            </p>
+          </div>
+          <div class="footer__col-2">
+            <div class="logo footer__logo"></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__right">
+        <div class="warp footer__warp">Все права защищены © 2015 - 2022 гг.</div>
       </div>
     </footer>
+    <!-- cart -->
+    <section class="cart">
+      <div class="cart__container">
+        <div class="cart__icon">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+        <div class="cart__text">
+          <div class="cart__title">Перейти в корзину</div>
+          <div class="cart__count">~ 12 322 500 ₽</div>
+        </div>
+        <a class="cart__button" href="./cart.html">
+          <div class="fa fa-chevron-right"></div>
+        </a>
+      </div>
+    </section>
+    <!-- end cart -->
   </body>
 </html>

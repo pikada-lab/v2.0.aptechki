@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Аптечки ру</title>
+    <meta name="description" content="Укомплектуем вашу аптечку" />
+    <meta name="theme-color" content="#9b183b" />
+    <meta name="msapplication-TileColor" content="#9b183b" />
+    <meta name="msapplication-navbutton-color" content="#9b183b" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#9b183b" />
+
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/menu.css?5" />
+    <link rel="stylesheet" href="./css/greeter.css?4" />
+    <link rel="stylesheet" href="./css/best.css" />
+    <link rel="stylesheet" href="./css/popular.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/product-card.css" />
+    <link rel="stylesheet" href="./css/search-form.css" />
+    <link rel="stylesheet" href="./css/chips.css" />
+    <link rel="stylesheet" href="./css/clients-insert.css" />
+    <link rel="stylesheet" href="./css/client-card.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+    <link rel="stylesheet" href="./css/clients.css" />
+    <link rel="stylesheet" href="./css/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+
+    <script type="text/javascript" src="http://code.createjs.com/easeljs-0.6.0.min.js"></script>
+    <script src="./js/knot.js"></script>
+    <script src="./js/bricks.js"></script>
+  </head>
+  <body>
+    <!-- start header -->
+    <header class="header">
+      <div class="warp header__warp">
+        <a class="header__back header__mobile_button" href="#back">
+          <i class="fas fa-chevron-left"></i>
+        </a>
+
+        <div class="logo header__logo"></div>
+        <div class="between"></div>
+        <nav class="menu header__menu">
+          <a class="menu-item" href="./index.html">Глвная</a>
+          <a class="menu-item" href="./supplies.html">Заказать аптечки</a>
+          <a class="menu-item menu-item_active" href="./clients.html">Наши клиенты</a>
+          <a class="menu-item" href="./contacts.html">Контакты</a>
+        </nav>
+
+        <a class="header__call header__mobile_button" href="#call">
+          <i class="fas fa-phone"></i>
+        </a>
+      </div>
+      <div class="header__mobile-menu">
+        <div class="warp heade__mobule-warp">
+          <div class="header__mobile-item">
+            <div class="header__mobile-icon">
+              <i class="fas fa-medkit"></i>
+            </div>
+            <div class="header__mobile-title">Аптечки</div>
+          </div>
+
+          <div class="header__mobile-item">
+            <div class="header__mobile-icon">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <div class="header__mobile-title">Клиенты</div>
+          </div>
+
+          <div class="header__mobile-item header__mobile-item__active">
+            <div class="header__mobile-icon">
+              <i class="fas fa-map-marked-alt"></i>
+            </div>
+            <div class="header__mobile-title">Контакты</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <script>
+      function resize(event) {
+        console.log("ABSOLUTLY LESS");
+      }
+    </script>
+    <!-- CONTENT -->
+    <div class="clients">
+      <div class="warp clients__warp">
+        <div class="clients__await" id="load-place">
+          <div class="logo clients__logo"></div>
+        </div>
+        <div class="clients__container loading" id="load-waiter">
+          <div class="clients__item">
+            <!-- client-big-card -->
+            <div class="client-big-card">
+              <div class="client-big-card__decor"></div>
+              <div class="client-big-card__content">
+                <div class="client-big-card__image">
+                  <img
+                    onload="resize(event)"
+                    onerror="resize(event)"
+                    src="./assets/zaryadye-main-logo-rus@2x.png"
+                    alt="Парк Зарядье"
+                    srcset="./assets/zaryadye-main-logo-rus@2x.png 1x, ./assets/zaryadye-main-logo-rus@2x.png 2x"
+                  />
+                </div>
+                <div class="client-big-card__text">
+                  <h3 class="client-big-card__title">Парк Зарядье</h3>
+                  <div class="client-big-card__description">
+                    Природно-ландшафтный парк «Зарядье» — объект в одноимённом историческом районе Москвы, созданный на
+                    месте снесённой в 2006 году гостиницы «Россия». Расположен на территории площадью в 13га между
+                    Китайгородским проездом, улицей Варваркой и Москворецкой набережной.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- client-big-card -->
+          <!-- client-big-card -->
+          <div class="clients__item">
+            <div class="client-big-card">
+              <div class="client-big-card__decor"></div>
+              <div class="client-big-card__content">
+                <div class="client-big-card__image">
+                  <img
+                    onload="resize(event)"
+                    onerror="resize(event)"
+                    src="./assets/MedicCEntr@2x.png"
+                    alt="Медицинский центр Елены Малышевой"
+                    srcset="./assets/MedicCEntr@2x.png 1x, ./assets/MedicCEntr@2x.png 2x"
+                  />
+                </div>
+                <div class="client-big-card__text">
+                  <h3 class="client-big-card__title">Медицинский центр Елены Малышевой</h3>
+                  <div class="client-big-card__description">
+                    Медицинский центр Елены Малышевой - это амбулаторная клиника. Мы собрали в ней лучших докторов
+                    России и мира. Я очень хочу, чтобы все достижения мировой медицины служили жителям нашей страны. Не
+                    волнуйтесь, пожалуйста, все зарубежные доктора блестяще говорят по-русски и никаких проблем в
+                    общении не будет.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- client-big-card -->
+          <!-- client-big-card -->
+          <div class="clients__item">
+            <div class="client-big-card">
+              <div class="client-big-card__decor"></div>
+              <div class="client-big-card__content">
+                <div class="client-big-card__image">
+                  <img
+                    onload="resize(event)"
+                    onerror="resize(event)"
+                    src="./assets/G.png"
+                    alt="ООО «ГАЗПРОМ ПЕРСОНАЛ»"
+                    srcset="./assets/G.png 1x, ./assets/G@2x.png 2x"
+                  />
+                </div>
+                <div class="client-big-card__text">
+                  <h3 class="client-big-card__title">ООО «ГАЗПРОМ ПЕРСОНАЛ»</h3>
+                  <div class="client-big-card__description">
+                    ОАО «Газпром» зарегистрировало новое 100-процентное дочернее общество — ООО «Газпром персонал».
+                    Новая компания будет заниматься подбором квалифицированных кадров из числа работников «Газпрома» для
+                    совместных предприятий по реализации международных проектов. Эти сотрудники войдут в штат «Газпром
+                    персонала» и, работая в СП, сохранят социальные льготы и гарантии, предусмотренные для трудового
+                    коллектива «Газпрома».
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- client-big-card -->
+          <!-- client-big-card -->
+          <div class="clients__item">
+            <div class="client-big-card">
+              <div class="client-big-card__decor"></div>
+              <div class="client-big-card__content">
+                <div class="client-big-card__image">
+                  <img
+                    onload="resize(event)"
+                    onerror="resize(event)"
+                    src="./assets/V.png"
+                    alt="ООО «Вольвач Клиник»"
+                    srcset="./assets/V.png 1x, ./assets/V@2x.png 2x"
+                  />
+                </div>
+                <div class="client-big-card__text">
+                  <h3 class="client-big-card__title">ООО «Вольвач Клиник»</h3>
+                  <div class="client-big-card__description">
+                    Клиника основана в 1998 году и работает под патронажем ведущего российского профессионального
+                    журнала «Новое в стоматологии». Уже более 15 лет мы каждый день возвращаем здоровье нашим пациентам
+                    и помогаем понять 2 простые истины: — да, визит к стоматологу это не светское удовольствие. Но
+                    осознанная необходимость в поддержании здоровья полости рта. Здоровье в целом, здоровые зубы и
+                    красивая улыбка являются неотъемлемым показателем качества современной жизни. Их восстановление и
+                    поддержание на должном уровне требуют определенных усилий и затрат. Как и при достижении и
+                    приобретении других составляющих высокого уровня качества жизни; — в современной стоматологии нет
+                    неразрешимых проблем. Первое и единственное условие их решения – найти своего врача. Профессионала,
+                    которому Вы сможете доверить свое здоровье. Именно врач является носителем самых современных методов
+                    лечения. Чтобы современные технологии трансформировались в здоровье Ваших зубов, необходимы знания,
+                    руки и, если хотите, душа врача и его помощников. В этих двух тезисах содержится весь смысл
+                    стоматологии. Все остальное – технические детали великого таинства исцеления. Самым действенным,
+                    эффективным и объективным советом в выборе врача может быть только рекомендация людей, которым Вы
+                    доверяете. Которые прошли трудный путь выбора, доверия и исцеления. И нашли своего
+                    врача-стоматолога. Прислушайтесь к их рекомендации.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- client-big-card -->
+          <!-- client-big-card -->
+          <div class="clients__item">
+            <div class="client-big-card">
+              <div class="client-big-card__decor"></div>
+              <div class="client-big-card__content">
+                <div class="client-big-card__image">
+                  <img
+                    onload="resize(event)"
+                    onerror="resize(event)"
+                    src="./assets/I.png"
+                    alt="ООО ИНВИТРО"
+                    srcset="./assets/I.png 1x, ./assets/I@2x.png 2x"
+                  />
+                </div>
+                <div class="client-big-card__text">
+                  <h3 class="client-big-card__title">ООО ИНВИТРО</h3>
+                  <div class="client-big-card__description">
+                    ИНВИТРО, крупнейшая частная медицинская компания в России, основана врачом-реаниматологом
+                    Александром Юрьевичем Островским. В 1995 году он вместе с партнерами создал компанию «ОМБ», одно из
+                    подразделений которой специализировалось на анализах для столичных больниц. В 1998 году было принято
+                    решение открывать розничные медицинские офисы, услуги в которых оказывались под брендом INVITRO.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- client-big-card -->
+          <!-- client-big-card -->
+          <div class="clients__item">
+            <div class="client-big-card">
+              <div class="client-big-card__decor"></div>
+              <div class="client-big-card__content">
+                <div class="client-big-card__image">
+                  <img
+                    onload="resize(event)"
+                    onerror="resize(event)"
+                    src="./assets/F.png"
+                    alt="ООО «СДМ-Фитнес»"
+                    srcset="./assets/F.png 1x, ./assets/F@2x.png 2x"
+                  />
+                </div>
+                <div class="client-big-card__text">
+                  <h3 class="client-big-card__title">ООО «СДМ-Фитнес»</h3>
+                  <div class="client-big-card__description">
+                    Офисный центр СДМ открывает свои двери в новый эксклюзивный фитнес клуб СДМ фитнес. Теперь Вы можете
+                    насладиться уютной атмосферой нашего фитнеса выполненного в Эко стиле. Начните заботиться о своем
+                    здоровье прямо сейчас! Достижение идеальной физической формы в сочетании с комфортной атмосферой
+                    -это то, что мы Вам можем предложить!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- client-big-card -->
+          <!-- client-big-card -->
+          <div class="clients__item">
+            <div class="client-big-card">
+              <div class="client-big-card__decor"></div>
+              <div class="client-big-card__content">
+                <div class="client-big-card__image">
+                  <img
+                    onload="resize(event)"
+                    onerror="resize(event)"
+                    src="./assets/U.png"
+                    alt="ООО МК «Юникс»"
+                    srcset="./assets/U.png 1x, ./assets/U@2x.png 2x"
+                  />
+                </div>
+                <div class="client-big-card__text">
+                  <h3 class="client-big-card__title">ООО МК «Юникс»</h3>
+                  <div class="client-big-card__description">
+                    Компания «ЮНИКС» работает на рынке медицинского оборудования и расходных материалов с 1999 года. За
+                    последние несколько лет мы осуществили успешную реструктуризацию, став не только одним из крупнейших
+                    дистрибьюторов медицинского оборудования, но и экспертом в реализации многоуровневых проектов по
+                    созданию, реконструкции и оснащению лечебно-профилактических учреждений.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- client-big-card -->
+          <!-- client-big-card -->
+          <div class="clients__item">
+            <div class="client-big-card">
+              <div class="client-big-card__decor"></div>
+              <div class="client-big-card__content">
+                <div class="client-big-card__image">
+                  <img
+                    onload="resize(event)"
+                    onerror="resize(event)"
+                    src="./assets/H.png"
+                    alt="Московский Цирк Никулина на Цветном бульваре"
+                    srcset="./assets/H.png 1x, ./assets/H@2x.png 2x"
+                  />
+                </div>
+                <div class="client-big-card__text">
+                  <h3 class="client-big-card__title">Московский Цирк Никулина на Цветном бульваре</h3>
+                  <div class="client-big-card__description">
+                    Известный на весь Мир цирк на Цветном бульваре. Юрий Владимирович Никулин генеральный директор и
+                    художественный руководитель Московского цирка на Цветном бульваре с 1982 г. по 1997 г. Народный
+                    артист СССР, Герой Социалистического труда, Лауреат Государственной премии РСФСР.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- client-big-card -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const sizes = [
+        { columns: 1, gutter: 14 },
+        { mq: "880px", columns: 2, gutter: 14 },
+        { mq: "1345px", columns: 3, gutter: 14 },
+        { mq: "1680px", columns: 4, gutter: 14 },
+      ];
+      const instance = Bricks({
+        container: ".clients__container",
+        packed: "data-packed",
+        sizes: sizes,
+        position: true,
+      });
+      instance.pack();
+      instance.resize(true);
+      let timer = 0;
+      let emmiter = () => {
+        clearTimeout(timer);
+        timer = setTimeout(_ => { 
+          let loader = document.getElementById("load-place");
+          let container = document.getElementById("load-waiter");
+          loader.style.display = "none";
+          container.classList = Array.from(container.classList).filter(r => r != "loading");
+          instance.pack(); 
+          console.log("UPDATED SIZE BECAUSE LOADED IMAGE");
+        }, 300);
+      }
+      function resize(event) {
+        if (instance) {
+          emmiter(); 
+        }
+        console.log("MISS UPDATED SIZE BECAUSE LOADED IMAGE", event);
+      }
+    </script>
+    <!-- end clients-insert -->
+    <footer class="footer">
+      <div class="footer__nav">
+        <div class="warp footer__warp">
+          <div class="footer__col-2">
+            <h4 class="footer__nav-title">Наши контакты</h4>
+            <p>Тел.: 8 800 200 96 97</p>
+            <p>Почта: aptechki@bk.ru</p>
+            <p>
+              Адрес: М. Люблино,<br />
+              ул. Верхние поля 45 к.4 Москва
+            </p>
+          </div>
+          <div class="footer__col-2">
+            <h4 class="footer__nav-title">Карта сайта</h4>
+            <p><a href="./">Главная</a></p>
+            <p><a href="./">Аптечки</a></p>
+            <p><a href="./">Наши клиенты</a></p>
+            <p><a href="./">Контакты</a></p>
+          </div>
+          <div class="footer__col-4">
+            <h4 class="footer__nav-title">Способы оплаты</h4>
+            <p>
+              Безналичный расчёт:<br />
+              ОГРН 1047796721642 ИНН/КПП 7723521600 / 772301001
+            </p>
+            <p>
+              Наличный расчёт:<br />
+              г. Москва, М. Люблино, ул. Верхние поля 45 к.4
+            </p>
+          </div>
+          <div class="footer__col-2">
+            <div class="logo footer__logo"></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__right">
+        <div class="warp footer__warp">Все права защищены © 2015 - 2022 гг.</div>
+      </div>
+    </footer>
+  </body>
+</html>

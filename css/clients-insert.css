@@ -1,0 +1,149 @@
+.clients-insert {
+  background: #ffffff;
+  padding: 100px 0;
+}
+
+.clients-insert__title {
+  text-align: center;
+  padding-bottom: 90px;
+}
+
+.clients-insert__warp {
+  display: flex;
+  gap: 16px;
+}
+.clients-insert__slider {
+  padding: 0;
+  list-style: none;
+}
+
+.header__mobile-menu {
+  display: none;
+  position: fixed;
+  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #dd2958;
+}
+.heade__mobule-warp {
+  display: flex;
+
+  width: 550px;
+}
+.header__mobile-item {
+  flex: 1;
+  padding: 11px;
+  text-align: center;
+  color: #fff;
+}
+.header__mobile-icon {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+.header__mobile-title {
+  font-size: 11px;
+}
+.header__mobile-item__active {
+  background: #ebebeb;
+  color: #dd2958;
+  border-right: 2px solid #0ad4d0;
+  border-left: 2px solid #641228;
+}
+
+.slider-arrows {
+  display: none;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  /* Чтобы во время перетаскивания слайда ничего не выделить внутри него */
+  user-select: none;
+  /* Чтобы запретить скролл страницы, если мы начали двигать слайдер по оси X */
+  touch-action: pan-y;
+}
+
+/* Если где-то внутри слайдера будут изображения,
+то нужно задать им pointer-events: none,
+чтобы они не перетаскивались мышью */
+
+.slide img {
+  pointer-events: none;
+}
+
+.slider-list {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.slider-list.grab {
+  cursor: grab;
+}
+
+.slider-list.grabbing {
+  cursor: grabbing;
+}
+
+.slider-track {
+  display: flex;
+}
+
+.slide {
+  flex: 0 0 50%;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+  height: 240px;
+  /* Чтобы слайды не сжимались */
+  flex-shrink: 0;
+  display: flex;
+}
+
+.slider-arrows {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.next,
+.prev {
+  background: none;
+  border: none;
+  margin: 0 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.next.disabled,
+.prev.disabled {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+@media (max-width: 1640px) {
+  .clients-insert {
+  }
+  .slide {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 840px) {
+  .clients-insert {
+    display: none;
+  }
+  .header__mobile-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 550px) {
+  .heade__mobule-warp {
+    width: auto;
+  }
+}

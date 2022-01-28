@@ -9,5 +9,8 @@
   },
   "keywords": [],
   "author": "Dzhigruda Anton <info@pikada-lab.ru>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bricks.js": "^1.8.0"
+  }
 }
