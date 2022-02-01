@@ -16,9 +16,8 @@
   margin-bottom: 0px;
 }
 
-
 .client-big-card__decor {
-  background: #dd2958; 
+  background: #dd2958;
   margin: 40px 0;
   width: 8px;
   flex: 0 0 8px;
@@ -81,18 +80,26 @@
   .clients__warp {
     width: 1226px;
   }
-  
 }
 @media (max-width: 1350px) {
   .clients__warp {
     width: 812px;
-  } 
+  }
 }
 @media (max-width: 880px) {
   .clients__warp {
     width: 100%;
-  } 
+  }
   .client-big-card {
     width: 100%;
+  } 
+  .clients__container {
+    width: auto !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .clients__item {
+    position: static !important;
   }
 }

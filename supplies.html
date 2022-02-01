@@ -85,19 +85,19 @@
     <!-- CONTENT -->
 
     <section class="supplies">
-      <div class="supplies__padding"> 
-      <h2 class="supplies__title">Популярные аптечки</h2>
-      <p class="supplies__descriptor">
-        Если здесь нет аптечки, которая вам нужна,<br />
-        свяжитесь с нами по телефону 8(800)200-96-97
-      </p>
-      <!-- start search-form  -->
-      <div class="search-form supplies__search-form">
-        <input class="search-form__input" placeholder="Название, приказ, назначение" />
-        <button class="button button_fill search-form__button">Поиск</button>
+      <div class="supplies__padding">
+        <h2 class="supplies__title">Заказать аптечку</h2>
+        <p class="supplies__descriptor">
+          Если здесь нет аптечки, которая вам нужна,<br />
+          свяжитесь с нами по телефону 8(800)200-96-97
+        </p>
+        <!-- start search-form  -->
+        <div class="search-form supplies__search-form">
+          <input class="search-form__input" placeholder="Название, приказ, назначение" />
+          <button class="button button_fill search-form__button">Поиск</button>
+        </div>
+        <!-- end search-form -->
       </div>
-      <!-- end search-form -->
-    </div>
       <!-- supplies__item -->
       <div class="supplies__item">
         <div class="warp supplies__mini__warp">
@@ -110,37 +110,16 @@
 
             <div class="supplies__button-box-mobile">
               <br />
-              <button class="button button_fill supplies__button">Развернуть</button>
+              <button class="button button_fill supplies__button" onclick="OpenSection(0)">Развернуть</button>
             </div>
           </div>
           <div class="supplies__button-box">
-            <button class="button button_fill supplies__button">Развернуть</button>
+            <button class="button button_fill supplies__button" onclick="OpenSection(0)">Развернуть</button>
           </div>
         </div>
       </div>
       <!-- end supplies__item -->
-      <!-- supplies__item -->
-      <div class="supplies__item">
-        <div class="warp supplies__mini__warp">
-          <div class="supplies__icon">
-            <div class="fa fa-briefcase-medical"></div>
-          </div>
-          <div class="supplies__text">
-            Приказ Федеральной службы по надзору в сфере защиты прав потребителей и благополучия человека от 18 сентября
-            2006 г. N 320 О Регламенте оснащения санитарно-карантинных пунктов
-
-            <div class="supplies__button-box-mobile">
-              <br />
-              <button class="button button_fill supplies__button">Развернуть</button>
-            </div>
-          </div>
-          <div class="supplies__button-box">
-            <button class="button button_fill supplies__button">Развернуть</button>
-          </div>
-        </div>
-      </div>
-      <!-- end supplies__item -->
-      <div class="supplies__item-content">
+      <div class="supplies__item-content" id="section-0">
         <div class="warp supplies__warp">
           <!-- START product-card -->
           <a class="product-card" href="product.html">
@@ -289,6 +268,56 @@
           <button class="button button_fill supplies__more_button">Скачать приказ</button>
         </div>
       </div>
+      <!-- supplies__item -->
+      <div class="supplies__item">
+        <div class="warp supplies__mini__warp">
+          <div class="supplies__icon">
+            <div class="fa fa-briefcase-medical"></div>
+          </div>
+          <div class="supplies__text">
+            Приказ Федеральной службы по надзору в сфере защиты прав потребителей и благополучия человека от 18 сентября
+            2006 г. N 320 О Регламенте оснащения санитарно-карантинных пунктов
+
+            <div class="supplies__button-box-mobile">
+              <br />
+              <button class="button button_fill supplies__button" onclick="OpenSection(1)">Развернуть</button>
+            </div>
+          </div>
+          <div class="supplies__button-box">
+            <button class="button button_fill supplies__button" onclick="OpenSection(1)">Развернуть</button>
+          </div>
+        </div>
+      </div>
+      <!-- end supplies__item -->
+      <div class="supplies__item-content" id="section-1">
+        <div class="warp supplies__warp">
+          <!-- START product-card -->
+          <a class="product-card" href="product.html">
+            <div class="product-card__image">
+              <img src="./assets/1.png" srcset="assets/1.png 1x, assets/1@2x.png 2x, assets/1@2x.png 3x" />
+            </div>
+            <div class="product-card__stereo-box">
+              <div class="chips">
+                <div class="chips__item chips__item__new">Новинка</div>
+                <div class="chips__item chips__item__best">Лучшее</div>
+              </div>
+              <h2 class="product-card__title">Укладка для проведения экстренной личной профилактики. БОКС 790</h2>
+              <p class="product-card-description">
+                Приказ Федеральной службы по надзору в сфере защиты прав потребителей и благополучия человека от 18
+                сентября 2006 г. N 320 О Регламенте оснащения санитарно-карантинных пунктов
+              </p>
+              <div class="product-card__price-line">
+                <div class="product-card__price">1 207 900 ₽</div>
+                <div class="product-card__logo"></div>
+              </div>
+            </div>
+          </a>
+          <!-- END product-card -->
+        </div>
+        <div class="supplies__more">
+          <button class="button button_fill supplies__more_button">Скачать приказ</button>
+        </div>
+      </div>
 
       <!-- supplies__item -->
       <div class="supplies__item">
@@ -302,15 +331,88 @@
 
             <div class="supplies__button-box-mobile">
               <br />
-              <button class="button button_fill supplies__button">Развернуть</button>
+              <button class="button button_fill supplies__button" onclick="OpenSection(2)">Развернуть</button>
             </div>
           </div>
           <div class="supplies__button-box">
-            <button class="button button_fill supplies__button">Развернуть</button>
+            <button class="button button_fill supplies__button" onclick="OpenSection(2)">Развернуть</button>
           </div>
         </div>
       </div>
       <!-- end supplies__item -->
+      <div class="supplies__item-content" id="section-2">
+        <div class="warp supplies__warp">
+          <!-- START product-card -->
+          <a class="product-card" href="product.html">
+            <div class="product-card__image">
+              <img src="./assets/1.png" srcset="assets/1.png 1x, assets/1@2x.png 2x, assets/1@2x.png 3x" />
+            </div>
+            <div class="product-card__stereo-box">
+              <div class="chips">
+                <div class="chips__item chips__item__new">Новинка</div>
+                <div class="chips__item chips__item__best">Лучшее</div>
+              </div>
+              <h2 class="product-card__title">Укладка для проведения экстренной личной профилактики. БОКС 790</h2>
+              <p class="product-card-description">
+                Приказ Федеральной службы по надзору в сфере защиты прав потребителей и благополучия человека от 18
+                сентября 2006 г. N 320 О Регламенте оснащения санитарно-карантинных пунктов
+              </p>
+              <div class="product-card__price-line">
+                <div class="product-card__price">1 207 900 ₽</div>
+                <div class="product-card__logo"></div>
+              </div>
+            </div>
+          </a>
+          <!-- END product-card -->
+          <!-- START product-card -->
+          <a class="product-card" href="product.html">
+            <div class="product-card__image">
+              <img src="./assets/1.png" srcset="assets/1.png 1x, assets/1@2x.png 2x, assets/1@2x.png 3x" />
+            </div>
+            <div class="product-card__stereo-box">
+              <div class="chips">
+                <div class="chips__item chips__item__new">Новинка</div>
+                <div class="chips__item chips__item__best">Лучшее</div>
+              </div>
+              <h2 class="product-card__title">Укладка для проведения экстренной личной профилактики. БОКС 790</h2>
+              <p class="product-card-description">
+                Приказ Федеральной службы по надзору в сфере защиты прав потребителей и благополучия человека от 18
+                сентября 2006 г. N 320 О Регламенте оснащения санитарно-карантинных пунктов
+              </p>
+              <div class="product-card__price-line">
+                <div class="product-card__price">1 207 900 ₽</div>
+                <div class="product-card__logo"></div>
+              </div>
+            </div>
+          </a>
+          <!-- END product-card -->
+          <!-- START product-card -->
+          <a class="product-card" href="product.html">
+            <div class="product-card__image">
+              <img src="./assets/1.png" srcset="assets/1.png 1x, assets/1@2x.png 2x, assets/1@2x.png 3x" />
+            </div>
+            <div class="product-card__stereo-box">
+              <div class="chips">
+                <div class="chips__item chips__item__new">Новинка</div>
+                <div class="chips__item chips__item__best">Лучшее</div>
+              </div>
+              <h2 class="product-card__title">Укладка для проведения экстренной личной профилактики. БОКС 790</h2>
+              <p class="product-card-description">
+                Приказ Федеральной службы по надзору в сфере защиты прав потребителей и благополучия человека от 18
+                сентября 2006 г. N 320 О Регламенте оснащения санитарно-карантинных пунктов
+              </p>
+              <div class="product-card__price-line">
+                <div class="product-card__price">1 207 900 ₽</div>
+                <div class="product-card__logo"></div>
+              </div>
+            </div>
+          </a>
+          <!-- END product-card -->
+        </div>
+        <div class="supplies__more">
+          <button class="button button_fill supplies__more_button">Скачать приказ</button>
+        </div>
+      </div>
     </section>
 
     <!-- end clients-insert -->
@@ -369,5 +471,26 @@
       </div>
     </section>
     <!-- end cart -->
+
+    <script>
+      let menu = new Map();
+      function CloseAll() {
+        let sections = document.getElementsByClassName("supplies__item-content");
+        for (let sec of sections) {
+          sec.style.display = "none";
+        }
+      }
+      function OpenSection(n) {
+          CloseAll();
+        if (menu.has(n)) {
+          menu.delete(n); 
+          return;
+        }
+        menu.set(n, true); 
+        let section = document.getElementById(`section-${n}`);
+        if (section) section.style.display = "block";
+      }
+      CloseAll();
+    </script>
   </body>
 </html>

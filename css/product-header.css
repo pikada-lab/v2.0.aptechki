@@ -1,5 +1,5 @@
 .product-header {
-  padding: 150px 20px 0 20px; 
+  padding: 129px 20px 20px 20px;
 }
 .product-header .product-header__warp {
   display: flex;
@@ -59,7 +59,9 @@
   margin-top: 2px;
   font-size: 14px;
 }
-
+.product-header__chips {
+  margin-bottom: 14px;
+}
 @media (max-width: 1380px) {
   .product-header__naming {
     flex: 0 0 508px;

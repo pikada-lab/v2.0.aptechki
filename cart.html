@@ -27,12 +27,12 @@
     <link rel="stylesheet" href="./css/chips.css" />
     <link rel="stylesheet" href="./css/clients-insert.css" />
     <link rel="stylesheet" href="./css/client-card.css" />
+    <link rel="stylesheet" href="./css/counter.css" />
     <link rel="stylesheet" href="./css/cart.css" />
     <link rel="stylesheet" href="./css/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
 
     <script type="text/javascript" src="http://code.createjs.com/easeljs-0.6.0.min.js"></script>
- 
   </head>
   <body>
     <!-- start header -->
@@ -45,7 +45,7 @@
         <div class="logo header__logo"></div>
         <div class="between"></div>
         <nav class="menu header__menu">
-          <a class="menu-item " href="./index.html">Глвная</a>
+          <a class="menu-item" href="./index.html">Глвная</a>
           <a class="menu-item" href="./supplies.html">Заказать аптечки</a>
           <a class="menu-item" href="./clients.html">Наши клиенты</a>
           <a class="menu-item" href="./contacts.html">Контакты</a>
@@ -82,7 +82,220 @@
     </header>
     <!-- end header -->
 
- <!-- CONTENT -->
+    <!-- CONTENT -->
+
+    <div class="cart-page">
+      <div class="warp cart-page__warp">
+        <div class="cart-page__list">
+          <!-- <div class="cart-page__empty">Корзина пуста</div> -->
+
+          <!-- start cart-item -->
+          <div class="cart-item">
+            <div class="cart-item__content">
+              <div class="cart-item__header">
+                <div class="catr-item__about">
+                  <div class="cart-item__name">Укладка для проведения экстренной личной профилактики. БОКС 790</div>
+                  <div class="cart-item__description">
+                    Приказ Федеральной службы по надзору в сфере защиты прав потребителей и благополучия человека от 18
+                    сентября 2006 г. N 320 О Регламенте оснащения санитарно-карантинных пунктов
+                  </div>
+                </div>
+
+                <div class="cart-item__image-mobile">
+                  <img src="./assets/2.png" />
+                </div>
+              </div>
+              <div class="cart-item__tag">
+                <div class="button button_fill cart-item__button">
+                  <div class="cart-item__icon">
+                    <i class="fas fa-briefcase-medical"></i>
+                  </div>
+                  <div class="cart-item__text">По вашей описи, cмотреть опись</div>
+                  <div class="cart-item__text-mobile">Cмотреть опись</div>
+                </div>
+              </div>
+              <div class="cart-item__counter">
+                <!-- counter -->
+                <div class="counter">
+                  <button class="button button_fill counter__button">
+                    <div class="fa fa-minus"></div>
+                  </button>
+                  <input class="counter__number" value="1" />
+                  <button class="button button_fill counter__button">
+                    <div class="fa fa-plus"></div>
+                  </button>
+                </div>
+                <!-- end counter -->
+                <div class="cart-item__price">78 500 ₽</div>
+
+                <div class="cart-item__close-mobile">
+                  <div class="fa fa-times"></div>
+                </div>
+              </div>
+              <div class="cart-item__total">Укладка: Будет рассчитана менеджером. Бокс: 450 ₽ = 450 ₽</div>
+            </div>
+            <div class="cart-item__image">
+              <img src="./assets/2.png" />
+            </div>
+            <div class="cart-item__close">
+              <div class="fa fa-times"></div>
+            </div>
+          </div>
+          <!-- end cart-item -->
+
+          <!-- start cart-item -->
+          <div class="cart-item">
+            <div class="cart-item__content">
+              <div class="cart-item__header">
+                <div class="catr-item__about">
+                  <div class="cart-item__name">АНТИВИЧ / АНТИГЕПАТИТ</div>
+                  <div class="cart-item__description">
+                    Согласно Приказам Министерства Здравоохранения и Управления Роспотребнадзора РФ о мерах по
+                    профилактике профессионального инфицирования ВИЧ парентеральными вирусными гепатитами, лечебно –
+                    профилактические организации, а также салоны красоты
+                  </div>
+                </div>
+
+                <div class="cart-item__image-mobile">
+                  <img src="./assets/3.png" />
+                </div>
+              </div>
+              <div class="cart-item__tag"></div>
+              <div class="cart-item__counter">
+                <!-- counter -->
+                <div class="counter">
+                  <button class="button button_fill counter__button">
+                    <div class="fa fa-minus"></div>
+                  </button>
+                  <input class="counter__number" value="1" />
+                  <button class="button button_fill counter__button">
+                    <div class="fa fa-plus"></div>
+                  </button>
+                </div>
+                <!-- end counter -->
+                <div class="cart-item__price">207 900 ₽</div>
+
+                <div class="cart-item__close-mobile">
+                  <div class="fa fa-times"></div>
+                </div>
+              </div>
+              <div class="cart-item__total">Укладка: Будет рассчитана менеджером. Бокс: 450 ₽ = 450 ₽</div>
+            </div>
+            <div class="cart-item__image">
+              <img src="./assets/3.png" />
+            </div>
+            <div class="cart-item__close">
+              <div class="fa fa-times"></div>
+            </div>
+          </div>
+          <!-- end cart-item -->
+
+          <!-- start cart-item -->
+          <div class="cart-item">
+            <div class="cart-item__content">
+              <div class="cart-item__header">
+                <div class="catr-item__about">
+                  <div class="cart-item__name">АНТИВИЧ / АНТИГЕПАТИТ</div>
+                  <div class="cart-item__description">
+                    Согласно Приказам Министерства Здравоохранения и Управления Роспотребнадзора РФ о мерах по
+                    профилактике профессионального инфицирования ВИЧ парентеральными вирусными гепатитами, лечебно –
+                    профилактические организации, а также салоны красоты
+                  </div>
+                </div>
+
+                <div class="cart-item__image-mobile">
+                  <img src="./assets/1.png" />
+                </div>
+              </div>
+              <div class="cart-item__tag"></div>
+              <div class="cart-item__counter">
+                <!-- counter -->
+                <div class="counter">
+                  <button class="button button_fill counter__button">
+                    <div class="fa fa-minus"></div>
+                  </button>
+                  <input class="counter__number" value="1" />
+                  <button class="button button_fill counter__button">
+                    <div class="fa fa-plus"></div>
+                  </button>
+                </div>
+                <!-- end counter -->
+                <div class="cart-item__price">207 900 ₽</div>
+
+                <div class="cart-item__close-mobile">
+                  <div class="fa fa-times"></div>
+                </div>
+              </div>
+              <div class="cart-item__total">Укладка: Будет рассчитана менеджером. Бокс: 450 ₽ = 450 ₽</div>
+            </div>
+            <div class="cart-item__image">
+              <img src="./assets/1.png" />
+            </div>
+            <div class="cart-item__close">
+              <div class="fa fa-times"></div>
+            </div>
+          </div>
+          <!-- end cart-item -->
+        </div>
+
+        <div class="cart-page__form">
+          <div class="cart-form">
+            <h1>Корзина</h1>
+            <p>Цена доставки в заказ не входит, она будет добавлена позже администратором.</p>
+            <div class="cart-form__container">
+              <div class="cart-form__form-item">
+                <div class="cart-form__label">ФИО</div>
+                <input type="text" />
+              </div>
+              <div class="cart-form__row">
+                <div class="cart-form__form-item">
+                  <div class="cart-form__label">Телефон</div>
+                  <input type="text" />
+                </div>
+
+                <div class="cart-form__form-item">
+                  <div class="cart-form__label">Почта</div>
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="cart-form__form-item">
+                <div class="cart-form__label">Адрес</div>
+                <input type="text" />
+              </div>
+              <div class="cart-form__form-item">
+                <div class="cart-form__label">Способ оплаты</div>
+                <input type="radio" name="payment" id="payment-1" value="1" checked />
+                <label for="payment-1">Безналичный расчёт</label><br />
+                <input type="radio" name="payment" id="payment-2" value="2" />
+                <label for="payment-2">Наличный расчёт</label>
+              </div>
+              <div class="cart-form__form-item">
+                <div class="cart-form__label">Способ получения</div>
+                <input type="radio" name="delivary" id="delivary-1" value="1" checked />
+                <label for="delivary-1">Самовызов</label><br />
+                <input type="radio" name="delivary" id="delivary-2" value="2" />
+                <label for="delivary-2">Доставка курьерской службой</label><br />
+                <input type="radio" name="delivary" id="delivary-3" value="3" />
+                <label for="delivary-3">Доставка курьером за МКАД</label>
+              </div>
+              <div class="cart-form__form-item">
+                <div class="cart-form__label">Комментарий</div>
+                <textarea class="cart-form__textarea"></textarea>
+              </div>
+
+              <div class="cart-form__form-item">
+                <div class="cart-form__label">Ваш перечень файлом</div>
+                <input type="file" />
+              </div>
+            </div>
+            <div class="cart-form__action">
+              <button class="button button_fill">Оформить заказ</button>
+              <div class="cart-form__total">12 232 400 ₽</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- end clients-insert -->
     <footer class="footer">
@@ -123,6 +336,6 @@
       <div class="footer__right">
         <div class="warp footer__warp">Все права защищены © 2015 - 2022 гг.</div>
       </div>
-    </footer> 
+    </footer>
   </body>
 </html>

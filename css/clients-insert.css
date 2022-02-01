@@ -1,11 +1,11 @@
 .clients-insert {
   background: #ffffff;
-  padding: 100px 0;
+  padding: 20px 0;
 }
 
 .clients-insert__title {
   text-align: center;
-  padding-bottom: 90px;
+  padding-bottom:10px;
 }
 
 .clients-insert__warp {

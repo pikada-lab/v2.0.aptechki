@@ -14,6 +14,9 @@ body {
 }
 
 h1 {
+  margin: 0;
+  font: normal normal bold 32px/47px "Montserrat";
+  color: #dd2958;
 }
 
 h2 {
